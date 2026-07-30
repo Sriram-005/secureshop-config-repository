@@ -11,6 +11,10 @@ spring:
       minimum-idle: 2
       maximum-pool-size: 10
 
+services:
+  order:
+    base-url: http://localhost:8083
+
 app:
   service-name: Payment Service
   message: Payment configuration loaded from GitHub
