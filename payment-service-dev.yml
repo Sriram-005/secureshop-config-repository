@@ -4,7 +4,7 @@ spring:
 
 logging:
   level:
-    com.secureshop.identity: DEBUG
+    com.secureshop.payment: DEBUG
 
 app:
   environment: development
