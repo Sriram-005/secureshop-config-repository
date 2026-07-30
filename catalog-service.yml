@@ -1,9 +1,9 @@
 server:
-  port: 8081
+  port: 8082
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/order_db
+    url: jdbc:postgresql://localhost:5432/catalog_db
     username: postgres
     password: Sriram@1310
 
@@ -12,5 +12,5 @@ spring:
       maximum-pool-size: 10
 
 app:
-  service-name: Order Service
-  message: Order configuration loaded from GitHub
+  service-name: Catalog Service
+  message: Catalog configuration loaded from GitHub
