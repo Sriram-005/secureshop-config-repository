@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ${ORDER_DB_URL}
-    username: ${ORDER_DB_USERNAME}
-    password: ${ORDER_DB_PASSWORD}
+    url: ${CATALOG_DB_URL}
+    username: ${CATALOG_DB_USERNAME}
+    password: ${CATALOG_DB_PASSWORD}
 
 logging:
   level:
