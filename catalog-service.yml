@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 0
 
 spring:
   datasource:
@@ -14,3 +14,8 @@ spring:
 app:
   service-name: Catalog Service
   message: Catalog configuration loaded from GitHub
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}:${random.value}
