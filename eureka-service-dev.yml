@@ -1,10 +1,5 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/order_dev_db
-
-logging:
-  level:
-    com.secureshop.order: DEBUG
+server:
+  port: 8761
 
 app:
   environment: development
