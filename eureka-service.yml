@@ -1,16 +1,22 @@
-server:
-  port: 8081
+eureka:
+  instance:
+    hostname: localhost
 
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/order_db
-    username: postgres
-    password: Sriram@1310
+  client:
+    register-with-eureka: false
+    fetch-registry: false
 
-    hikari:
-      minimum-idle: 2
-      maximum-pool-size: 10
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 
-app:
-  service-name: Order Service
-  message: Order configuration loaded from GitHub
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+
+  endpoint:
+    health:
+      show-details: always
