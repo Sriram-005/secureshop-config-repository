@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 0
 
 spring:
   datasource:
@@ -18,3 +18,8 @@ services:
 app:
   service-name: Order Service
   message: Order configuration loaded from GitHub
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}:${random.value}
